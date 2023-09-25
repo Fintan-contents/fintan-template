@@ -1,0 +1,20 @@
+# https://github.com/updownpress/markdown-lint/tree/master/rules
+# Dollar signs used before commands without showing output
+commands-show-output: false
+# Trailing punctuation in heading
+no-trailing-punctuation:
+  punctuation: ".,;:!。，；：！"
+# Trailing spaces
+line-length:
+  code_blocks: false
+  tables: false
+no-inline-html:
+  allowed_elements:
+    - pre
+    - br
+    - ul
+    - ol
+    - li
+    - a
+    - img
+    - figcaption

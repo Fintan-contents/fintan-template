@@ -1,0 +1,40 @@
+{
+  "filters": {
+    "comments": true,
+    "allowlist": {
+      "allow": [
+        "/<pre>.*?<\/pre>/"
+      ]
+    }
+  },
+  "rules": {
+    "preset-ja-technical-writing": {
+      "no-exclamation-question-mark": false,
+      "ja-no-weak-phrase": false,
+      "sentence-length": {
+        "max": 200
+      }
+    },
+    "ja-no-mixed-period": false,
+    "spellcheck-tech-word": true,
+    "period-in-list-item": true,
+    "textlint-rule-preset-ja-spacing": {
+      "ja-space-between-half-and-full-width": {
+        "space": "never"
+      }
+    },
+    "prh": {
+      "rulePaths": ["./prh.yml"]
+    },
+    "no-dead-link": {
+      "ignore": [
+        "http://localhost**"
+      ],
+      "preferGET": [],
+      "ignoreRedirects": true,
+      "retry": 3,
+      "userAgent": "textlint-rule-no-dead-link/1.0",
+      "concurrency": 8
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# 表記ゆれを修正します
+rules:
+  - pattern: /ユーザ([^ー])/
+    expected: ユーザー$1
+  - pattern:
+      - 1つ1つ
+      - 一つひとつ
+      - ひとつひとつ
+    expected: 一つ一つ
